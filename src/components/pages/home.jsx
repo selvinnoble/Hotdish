@@ -8,7 +8,8 @@ import { collection, getDocs, query, where, limit } from "firebase/firestore";
 import { FaStar } from "react-icons/fa";
 import DistanceToRestaurant from "../distance/distancetorestaurant";
 import Footer from "../Footer";
-import HomeHeader from "./HomeHeader";
+import HomeHeader from "../../components/HomeHeader";
+
 
 const Home = () => {
   const [searchTerm, setSearchTerm] = useState("");
