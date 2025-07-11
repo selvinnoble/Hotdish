@@ -1,0 +1,199 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto; /* Enable scrolling */
+}
+
+/* Main container scrollable on mobile */
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* top alignment for scroll */
+  padding: 20px 10px;
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-y: auto;       /* Scrollable container */
+  background: linear-gradient(to bottom, #ffffff, #fef3e5);
+}
+
+
+/* Register card */
+.register-card {
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Header with image */
+.register-header {
+  width: 100%;
+  overflow: hidden;
+}
+
+.register-header-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Title */
+.hotdish-title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 10px;
+}
+
+.hotdish-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ff4500;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Form styles */
+.register-body {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.register-body label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+.register-body input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+/* Button */
+.register-button {
+  width: 100%;
+  background-color: #003399;
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: #001f66;
+}
+
+/* Already have an account text */
+.login-text {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.login-text span {
+  color: #003399;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .register-container {
+    align-items: flex-start;
+    padding: 15px 10px;
+    min-height: 100vh;
+  }
+
+  .register-card {
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+  }
+
+  .register-header-img {
+    height: 140px;
+  }
+
+  .hotdish-title {
+    font-size: 20px;
+  }
+
+  .register-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.profile-image-wrapper {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+}
+
+.upload-hover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(0, 123, 255, 0.8), rgba(255, 0, 0, 0.8));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: #fff;
+  pointer-events: none;
+}
+
+.profile-image-wrapper:hover .upload-hover-overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.camera-icon {
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+}
+
+.upload-hover-text {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: rgb(250, 250, 0);
+}

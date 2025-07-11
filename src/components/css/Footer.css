@@ -1,0 +1,76 @@
+.footer-link {
+  color: #888;
+  text-decoration: none;
+  width: 25%;
+}
+
+.footer-link.active {
+  color: #d9230f; /* Zomato red */
+  font-weight: bold;
+}
+
+.footer-nav {
+  z-index: 1030;
+}
+
+.footer-nav {
+  background-color: #F7E7CE; /* Champagne */
+  border-top: 1px solid #ddd;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.05);
+}
+
+.footer-link {
+  color: #555;
+}
+
+.footer-link.active {
+  color: #C19A6B; /* Soft luxury brown */
+}
+
+.luxury-footer {
+  background-color: #fffdf8;
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-link {
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  color: #5a5a5a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-icon {
+  font-size: 20px;
+  color: #b9925c;
+  margin-bottom: 2px;
+}
+
+.active-icon {
+  color: #daa520;
+}
+
+.footer-link p {
+  margin: 0;
+  font-size: 12px;
+  color: #5a5a5a;
+}
+
+.active-label {
+  color: #daa520;
+  font-weight: 600;
+}
+
+.main-content {
+  padding-bottom: 60px; /* Same as .luxury-footer height */
+}
+
+body {
+  padding-bottom: 60px;
+}

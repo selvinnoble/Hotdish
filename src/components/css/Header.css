@@ -1,0 +1,38 @@
+.hotdish-header {
+  background-image: url("/src/assets/img/hotdish-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding-top: env(safe-area-inset-top); /* for mobile safe area */
+}
+
+.search-container {
+  margin-top: 10px;
+}
+
+.hotdish-red-bg {
+  background-color: #f57878; /* Luxury red */
+  text-shadow: 1px 1px 3px rgba(185, 156, 16, 0.7); /* Better visibility */
+}
+.hotdish-title {
+  font-size: 2rem;           /* Make it big */
+  font-weight: 700;          /* Bold text */
+  color: #ffcc00;            /* Bright visible color (luxury gold/yellow) */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Better visibility */
+  letter-spacing: 1px;
+}
+
+.back-button {
+  background: transparent;
+  border: none;
+  color: #ffffff;;
+  padding: 4px;
+  
+}
+
+.back-button:hover {
+  border:none; /* make sure border stays gone */
+}
+
+

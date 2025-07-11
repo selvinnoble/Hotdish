@@ -1,0 +1,20 @@
+.card {
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+}
+
+.btn-link {
+  font-size: 0.85rem;
+}
+
+.fixed-bottom {
+  z-index: 1050;
+}
+
+.scrollable-cart-content {
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+}
